@@ -1,0 +1,85 @@
+/* src/components/ImageSlider.css */
+.project-image {
+    width: 100%;
+    height: 80%;
+    border-radius: 8px ;
+    transition: transform 0.3s ease-in-out;
+  
+   /* max-height: 500px;   Optional: Limit the height of images */
+   object-fit: contain;   /*Ensure the image is scaled and maintains aspect ratio */
+    
+    transition: border 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for the images */
+  .project-image:hover {
+    border: 5px solid yellow;
+    box-shadow: 0 0 15px #ff5733;
+  }
+  
+  .slick-prev, .slick-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    color: white;
+    /*font-size: 20px; Adjust as needed */
+    z-index: 1;/* Make sure arrows are clickable */
+    padding: 0;
+  }
+  
+  .slick-prev {
+    left: 0;
+  }
+  
+  .slick-next {
+    right:0;
+    
+  }
+  
+  .slick-dots {
+    bottom: 0px;
+  }
+  
+  .slick-dots li button:before {
+    color: #ffffff;
+  }
+  
+  .slick-slide {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
+  .slick-list {
+    padding: 0; /* Remove default padding */
+  }
+  .slick-track {
+    display: flex;
+    justify-content: center; /* Ensure the slides are centered */
+    gap: 20px; /* Adjust gap between slides for equal spacing */
+  }
+  
+  .image-slider-container {
+    width: 95%;
+   /* max-width: 1000px; Optional: Set a maximum width for the slider */
+    margin: 0 auto;
+    margin-bottom: 10px;
+    height: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+   /* justify-content: center;  Horizontally center the slider */
+    align-items: center;    /* Vertically center the slider */
+   
+  }
+
+  
+  .slick-prev:hover, .slick-next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker hover effect */
+  }
+  .slick-slider {
+    margin-bottom: 0 !important;
+  }
+  /** {
+    box-sizing: border-box;
+  }*/
