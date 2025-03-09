@@ -1,0 +1,129 @@
+/* General Styles for Summary Section */
+/*.summary {
+    padding: 100px 20px; /* Extra padding for spacing from the header 
+    background: linear-gradient(135deg, #e3ffe7, #d9e7ff);  Soft gradient background 
+    min-height: 100vh; Takes up more space on the screen 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .summary-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+  }
+  
+  .summary-text {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .summary-text h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .summary-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  .summary-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .summary-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border: 5px solid #fff;
+  }
+  */
+
+  
+  .summary {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #e3ffe7, #e7a6e6);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1700px;
+    max-height: 100%;
+    margin: 0 auto;
+    gap: 30px;
+}
+.summary-container:hover{
+  background:#d9d9ea;
+}
+
+.summary-text {
+    flex: 1;
+    padding: 0;
+}
+
+.summary-text h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.summary-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.summary-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.summary-image img {
+    width: 310px;  
+    height:350px; 
+    border-radius: 50%;
+    object-fit:contain;
+    position: relative;
+    z-index: 0;
+    bottom: 0;
+    clip-path: ellipse(800px 900px at center); 
+    transform: translateY(-10px);
+}
+
+.summary-image::before {
+    content: "";
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 10px solid #fff;
+    position: absolute;
+    z-index: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
